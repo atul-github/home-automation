@@ -229,23 +229,11 @@ connectToWifi();
   server.on("/switch/on/1", [](){
     switchOnOff(D1, 1);
   });
-  server.on("/switch/on/2", [](){
-    switchOnOff(D2, 1);
-  });
   server.on("/switch/on/3", [](){
     switchOnOff(D3, 1);
   });
   server.on("/switch/on/4", [](){
     switchOnOff(D4, HIGH);
-  });
-  server.on("/switch/on/5", [](){
-    switchOnOff(D5, 1);
-  });
-  server.on("/switch/on/6", [](){
-    switchOnOff(D6, 1);
-  });
-  server.on("/switch/on/7", [](){
-    switchOnOff(D7, 1);
   });
   server.on("/switch/on/8", [](){
     switchOnOff(D8, 1);
@@ -258,23 +246,11 @@ connectToWifi();
   server.on("/switch/off/1", [](){
     switchOnOff(D1, 0);
   });
-  server.on("/switch/off/2", [](){
-    switchOnOff(D2, 0);
-  });
   server.on("/switch/off/3", [](){
     switchOnOff(D3, 0);
   });
   server.on("/switch/off/4", [](){
     switchOnOff(D4, LOW);
-  });
-  server.on("/switch/off/5", [](){
-    switchOnOff(D5, 0);
-  });
-  server.on("/switch/off/6", [](){
-    switchOnOff(D6, 0);
-  });
-  server.on("/switch/off/7", [](){
-    switchOnOff(D7, 0);
   });
   server.on("/switch/off/8", [](){
     switchOnOff(D8, 0);
@@ -286,23 +262,11 @@ connectToWifi();
   server.on("/toggle/1", [](){
     toggle(D1);
   });
-  server.on("/toggle/2", [](){
-    toggle(D2);
-  });
   server.on("/toggle/3", [](){
     toggle(D3);
   });
   server.on("/toggle/4", [](){
     toggle(D4);
-  });
-  server.on("/toggle/5", [](){
-    toggle(D5);
-  });
-  server.on("/toggle/6", [](){
-    toggle(D6);
-  });
-  server.on("/toggle/7", [](){
-    toggle(D7);
   });
   server.on("/toggle/8", [](){
     toggle(D8);
@@ -315,23 +279,11 @@ connectToWifi();
   server.on("/status/1", [](){
     sendResponse(D1);
   });
-  server.on("/status/2", [](){
-    sendResponse(D2);
-  });
   server.on("/status/3", [](){
     sendResponse(D3);
   });
   server.on("/status/4", [](){
     sendResponse(D4);
-  });
-  server.on("/status/5", [](){
-    sendResponse(D5);
-  });
-  server.on("/status/6", [](){
-    sendResponse(D6);
-  });
-  server.on("/status/7", [](){
-    sendResponse(D7);
   });
   server.on("/status/8", [](){
     sendResponse(D8);
